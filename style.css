@@ -51,6 +51,16 @@ nav a {
     color: rgb(230, 70, 70);
 }
 
+#shopping-cart {
+    position: absolute;
+    right: 15px;
+}
+
+.fa-shopping-cart {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
 /* Slider */
 
 .slider-section {
@@ -135,7 +145,7 @@ color: white;
     width: 100%;
 }
 
-.clothes-text {
+.clothes-down {
     margin-top: 10px;
 }
 
@@ -151,6 +161,47 @@ color: white;
     position: relative;
 }
 
+/* comprar */
+.comprar {
+    display: flex;
+    padding: 10px;
+}
+
+.number {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.less {
+    padding: 3px 6px;
+    color: white;
+    background-color: rgb(230, 70, 70);
+    border: none;
+    cursor: pointer;
+}
+
+.plus {
+    padding: 3px 6px;
+    color: white;
+    background-color: rgb(230, 70, 70);
+    border: none;
+    cursor: pointer;
+}
+
+#buy {
+    padding: 8px 16px;
+    background-color: rgb(230, 70, 70);
+    color: black;
+    border: none;
+    border-radius: 6px;
+   cursor: pointer;
+    margin: 10px;
+}
+
+
 /* countdown */
 
 .countdown-container {
@@ -160,12 +211,21 @@ color: white;
     width: 90%;
     height: 300px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.time-title {
+    color: white;
+    font-size: 1.7rem;
+    width: 100%;
+    z-index: 5;
+    text-align: center;
+    margin-top: 25px;
 }
 
 .time {
     display: flex;
     justify-self: space-evenly;
-    align-self: center;
     width: 100%;
     height: 100%;
  
@@ -176,4 +236,50 @@ color: white;
     height: 100%;
     color: white;
     z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    background-color: rgb(22, 21, 21);
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+
+footer h3 {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+footer p {
+    color: #959596;
+    margin-top: 5px;
+    letter-spacing: 1.4px;
+}
+.footer-about {
+    width: 50%;
+    margin: 30px;
+}
+
+.footer-get {
+    margin: 30px;
+    width: 50%;
+}
+
+.divide {
+    background-color: rgb(230, 70, 70);
+    width: 30%;
+    height: 1px;
+    margin-top: 10px;
+}
+
+.footer-span {
+    color: rgb(230, 70, 70);
 }

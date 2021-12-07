@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a5c3e3c746.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="main-header">
@@ -19,6 +20,9 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <div id="shopping-cart">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
     </header>
    <div class="slider-section">
     <div class="slider-container">
@@ -36,59 +40,109 @@
        <div class="clothes">
           <div class="clothes-container">
               <img src="./card1.jpeg" alt="">
-              <div class="clothes-text">
+              <div class="clothes-down">
                  <h4>"Focus" white shirt</h4>
                  <span class="price">$20</span>
+                  <div class="comprar">
+                    <button class="less">-</button>
+                    <div class="number">1</div>
+                    <button class="plus">+</button>
+                 </div>
+                 <button id="buy">Buy</button>
               </div>
           </div>
           <div class="clothes-container">
             <img src="./card1.jpeg" alt="">
-            <div class="clothes-text">
+            <div class="clothes-down">
                <h4>"Focus" white shirt</h4>
                <span class="price">$20</span>
+                <div class="comprar">
+                  <button class="less">-</button>
+                  <div class="number">1</div>
+                  <button class="plus">+</button>
+               </div>
+               <button id="buy">Buy</button>
             </div>
         </div>
         <div class="clothes-container">
             <img src="./card1.jpeg" alt="">
-            <div class="clothes-text">
+            <div class="clothes-down">
                <h4>"Focus" white shirt</h4>
                <span class="price">$20</span>
+                <div class="comprar">
+                  <button class="less">-</button>
+                  <div class="number">1</div>
+                  <button class="plus">+</button>
+               </div>
+               <button id="buy">Buy</button>
             </div>
         </div>
         <div class="clothes-container">
             <img src="./card1.jpeg" alt="">
-            <div class="clothes-text">
+            <div class="clothes-down">
                <h4>"Focus" white shirt</h4>
                <span class="price">$20</span>
+                <div class="comprar">
+                  <button class="less">-</button>
+                  <div class="number">1</div>
+                  <button class="plus">+</button>
+               </div>
+               <button id="buy">Buy</button>
             </div>
         </div>
         <div class="clothes-container">
             <img src="./card1.jpeg" alt="">
-            <div class="clothes-text">
+            <div class="clothes-down">
                <h4>"Focus" white shirt</h4>
                <span class="price">$20</span>
+                <div class="comprar">
+                  <button class="less">-</button>
+                  <div class="number">1</div>
+                  <button class="plus">+</button>
+               </div>
+               <button id="buy">Buy</button>
             </div>
         </div>
         <div class="clothes-container">
             <img src="./card1.jpeg" alt="">
-            <div class="clothes-text">
+            <div class="clothes-down">
                <h4>"Focus" white shirt</h4>
                <span class="price">$20</span>
+                <div class="comprar">
+                  <button class="less">-</button>
+                  <div class="number">1</div>
+                  <button class="plus">+</button>
+               </div>
+               <button id="buy">Buy</button>
             </div>
         </div>
         <div class="clothes-container">
             <img src="./card1.jpeg" alt="">
-            <div class="clothes-text">
+            <div class="clothes-down">
                <h4>"Focus" white shirt</h4>
                <span class="price">$20</span>
+                <div class="comprar">
+                  <button class="less">-</button>
+                  <div class="number">1</div>
+                  <button class="plus">+</button>
+               </div>
+               <button id="buy">Buy</button>
             </div>
         </div>
         <div class="clothes-container">
             <img src="./card1.jpeg" alt="">
-            <div class="clothes-text">
+            <div class="clothes-down">
                <h4>"Focus" white shirt</h4>
                <span class="price">$20</span>
+                <div class="comprar">
+                  <button class="less">-</button>
+                  <div class="number">1</div>
+                  <button class="plus">+</button>
+               </div>
+               <button id="buy">Buy</button>
             </div>
+        </div>
+          
         </div>   
        </div>
    </section>
@@ -96,7 +150,9 @@
  
 <div class="countdown-container">
     <div class="capa"></div>
-    
+    <div class="time-title">
+        <h2>Our winter collection will be available in</h2>
+    </div>
     <div class="time">
         <div class="time-container">
             <h2 id="days">00</h2>
@@ -112,10 +168,28 @@
         </div>
         <div class="time-container">
             <h2 id="seconds">00</h2>
-            <p>Hours</p>
+            <p>Seconds</p>
         </div>
     </div>
+</div>
 
-    <script src="index.js"></script>
+<footer>
+    <div class="footer-about">
+        <h3>About us</h3>
+         <div class="divide"></div>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorum nisi repellendus ducimus non ipsa facere, sint similique ut laudantium, quo dicta deserunt nulla sit odit saepe, cupiditate assumenda accusamus!</p>
+    </div>
+    <div class="footer-get">
+        <h3>Get in touch</h3>
+        <div class="divide"></div>
+        <span class="footer-span">Location</span>
+        <p>New York City.</p>
+        <span class="footer-span">Contact:</span>
+        <p>Phone : +121 098 8907 9987</p>
+    </div>
+</footer>
+   
+
+    <script src="index.js" type="module"></script>
 </body>
 </html>
