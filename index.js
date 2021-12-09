@@ -1,24 +1,13 @@
 import countdown from "./time.js";
 
-const lessBtn = document.querySelector(".less");
-const plusBtn = document.querySelector(".plus");
-const number = document.querySelector(".number");
-const price = document.querySelector(".price");
-let value = 1;
+const example = document.getElementById("shopping-cart")
+const container = document.querySelector(".items-container")
+const close = document.getElementById("cerrar")
 
-lessBtn.addEventListener("click", () => {
-    value--;
-    value < 1 ? value = 0 : value;
-    number.innerHTML = value;
-    price.innerHTML = `$${20 * value}`
+example.addEventListener("click", () => {
+    container.classList.toggle("mostrarc")
 })
 
-
-plusBtn.addEventListener("click", () => {
-value++;
-    number.innerHTML = value;
-    price.innerHTML = `$${20*value}`
-
+close.addEventListener("click", () => {
+    container.classList.remove("mostrarc")
 })
-
-
