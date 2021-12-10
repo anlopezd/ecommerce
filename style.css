@@ -69,6 +69,7 @@ nav a {
 #shopping-cart {
     position: fixed;
     right: 15px;
+    z-index: 1;
 }
 
 .fa-shopping-cart {
@@ -205,6 +206,7 @@ color: white;
 .clothes-container {
     width: 250px;
     border: 1px solid rgb(224, 221, 221);
+    overflow: hidden;
 }
 
 .clothes-container img {
@@ -212,7 +214,10 @@ color: white;
     object-position: top;
     width: 100%;
     height: 220px;
+    transition: all .5s;
 }
+
+
 
 .clothes-down {
     margin-top: 10px;
@@ -299,7 +304,7 @@ color: white;
 .items-container {
   width: 650px;
   height: 100%;
-  background-color: rgb(230, 70, 70);
+  background-color: rgb(202, 210, 197);
   position: fixed;
   top: 0;
   right: 0;
@@ -325,6 +330,7 @@ color: white;
     height: 21px;
     margin-left: 10px;
     text-align: center;
+    display: none;
 }
 .mostrarc {
   transform: translateX(0);
@@ -375,7 +381,7 @@ color: white;
     width: 20px;
     height: 20px;
   
-    background-color: rgb(242, 255, 58);
+    background-color: rgb(230, 70, 70);
   
     border-radius: 50%;
   

@@ -40,22 +40,22 @@ function renderProducts() {
     products.forEach( (product) => {
         
   mostrarProductos.innerHTML += `
-  <div class="clothes-container">
-                  <img src=${product.imgSrc} alt="">
-                  <div class="clothes-down">
-                    <div class="clothes-text">
-                        <h4>${product.name}</h4>
-                        <span class="price">$${product.price}</span>
-                    </div> 
+    <div class="clothes-container">
+        <img src=${product.imgSrc} loading="lazy" alt="${product.name}">
+            <div class="clothes-down">
+             <div class="clothes-text">
+             <h4>${product.name}</h4>
+                <span class="price">$${product.price}</span>
+                </div> 
                    
-                      <div class="comprar">
-                        <button class="less" onclick="changeUnits('minus', ${product.id})">-</button>
-                        <div class="number">1</div>
-                        <button class="plus" onclick="changeUnits('plus', ${product.id})">+</button>
-                        </div>
-                  </div>
-                  <button id="buy" onclick="addToCart(${product.id})">Buy</button>
-              </div>
+                <div class="comprar">
+                    <button class="less" onclick="changeUnits('minus', ${product.id})">-</button>
+                    <div class="number">1</div>
+                    <button class="plus" onclick="changeUnits('plus', ${product.id})">+</button>
+                </div>
+            </div>
+                <button id="buy" onclick="addToCart(${product.id})">Buy</button>
+    </div>
   `
     })
 }
@@ -103,7 +103,12 @@ function renderSubtotal() {
     `
     const shopcart = document.getElementById("numbercart")
 
-numbercart.innerHTML = totalItems
+    if(totalItems > 0) {
+       shopcart.style.display = "block"
+       shopcart.innerHTML = totalItems
+    } else {
+        shopcart.style.display = "none"
+    }
 }
 
 function renderCartItems() {
