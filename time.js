@@ -1,5 +1,5 @@
 export default function countdown() {
-    const countDate = new Date("Dec 28, 2021 00:00:00").getTime()
+    const countDate = new Date("Oct 28, 2022 00:00:00").getTime()
     const now = new Date().getTime()
     const gap = countDate - now
 
